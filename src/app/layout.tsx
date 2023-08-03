@@ -40,8 +40,11 @@ export default function RootLayout({
             <FaGithub />
           </Link>
         </div>
-        <h1 className="w-full text-center mt-4 text-2xl">
-          Hey, I&apos;m Sunil 👋
+        <h1 className="w-full text-center font-light mt-4 text-2xl">
+          Hey, I&apos;m{" "}
+          <Link href="/blog/64ca9030cba7ff4eed31" className="underline">
+            Sunil
+          </Link>{" "}
         </h1>
         {children}
       </body>
