@@ -14,9 +14,9 @@ function BlogSection() {
         return (
           <div className="my-4" key={post.$id}>
             <Link href={`/blog/${post.$id}`}>
-              <h4 className="underline mb-0 font-normal">{post.title}</h4>
+              <h4 className="underline mb-0 font-light">{post.title}</h4>
             </Link>
-            <p className="mt-0 text-sm">{getFormatDate(post.date)}</p>
+            <p className="mt-0 font-light text-sm">{getFormatDate(post.date)}</p>
           </div>
         );
       })
@@ -29,7 +29,7 @@ function BlogSection() {
 
   return (
     <div>
-      <h1 className="text-2xl font-medium">Blog</h1>
+      <h1 className="text-2xl font-light">Blog</h1>
       {content}
     </div>
   );

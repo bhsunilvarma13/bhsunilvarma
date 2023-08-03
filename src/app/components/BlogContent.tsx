@@ -21,5 +21,5 @@ export default async function BlogContent({
 
   const HTMLData = { __html: data };
 
-  return <div className="my-8" dangerouslySetInnerHTML={HTMLData} />;
+  return <div className="my-8 font-light" dangerouslySetInnerHTML={HTMLData} />;
 }

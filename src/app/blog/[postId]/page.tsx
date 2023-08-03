@@ -33,11 +33,11 @@ async function PostPage({ params }: Params) {
   return (
     <main className="max-w-2xl mx-auto p-8">
       <div>
-        <h1 className="text-2xl font-medium">{post.title}</h1>
-        <p className="mt-0 text-sm">{getFormatDate(post.date)}</p>
+        <h1 className="text-2xl font-light">{post.title}</h1>
+        <p className="mt-0 text-sm font-light">{getFormatDate(post.date)}</p>
         <BlogContent filePromise={filePromise} />
         <Link href="/">
-          <p>← Back to home</p>
+          <p className="font-light">← Back to home</p>
         </Link>
       </div>
     </main>
